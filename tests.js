@@ -14,8 +14,25 @@ describe('helloWorld', function() {
     });
 });
 
+//sayHello
+
 describe('sayHello', function() {
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
+    });
+    it('should return a string when called', function () {
+        expect(typeof sayHello()).toBe("string");
+    });
+    it('should return the string "Hello, Summer!" when executed', function () {
+        expect(sayHello("Summer")).toBe("Hello, Summer!");
+    });
+    it('should return the string "Hello, Alex!" when executed', function () {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it('should return the string "Hello, Pat!" when executed', function () {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+    it('should return the string "Hello, name!" when executed', function () {
+        expect(sayHello(name)).toBe("Hello, " + name + "!");
     });
 });

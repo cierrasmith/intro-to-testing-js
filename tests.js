@@ -35,4 +35,13 @@ describe('sayHello', function() {
     it('should return the string "Hello, name!" when executed', function () {
         expect(sayHello(name)).toBe("Hello, " + name + "!");
     });
+    it('should return the string "Hello, World!" when executed', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when executed', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when executed', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
 });
